@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<style>
+.form-control {
+     display: block;
+     height: 48px;
+     padding: 6px 12px;
+     width: 400px;
+     border: 4px solid #45416D;
+     border-radius: 19px;
+}
+.center-display{
+     margin:auto;
+     /*position:absolute;*/
+     top:0;
+     bottom:0;
+     right:0;
+     left:0;
+}
+.results{
+     /*margin-top:10%;*/
+}
+
+
+body {
+    background-color: lightblue;
+}
+</style>
+
+</head>
+
+<body>
+<header>
+
+</header>
+ <div class="container">
+
+      <div class="starter-template">
+        <h1>SELECTED---Result Of Ecommerce-website Scraper</h1>
+        <p class="lead small">night watchman of flipkart.com<br> All you get is price and ratings of the items for your search word.</p>
+      </div>
+      <div class='results'>
+          <h3>{{resultt|length}}  Products  Selected      ...   {{resultt}}  </h3>
+      </div>
+
+      </div><!-- /.container -->
+
+
+      <div class="controls">
+    <div class='results'>
+          <h3> Search Results Found...</h3>
+          <p class="lead small" style="background-color: yellow;">These below values are real during the crawling happened just now .Now these values may vary or may not.</p>
+          <table style ="float: left"class="table table-striped table-responsive table-hover table-bordered">
+               <tr>
+                    <th>  Results of AMAZON </th>
+               </tr>
+                <tr><td>positive review predicted: {{pos_rev_amz}}</td></tr> 
+                <tr><td>negative review predicted: {{neg_rev_amz}}</td></tr>
+                <tr><td>total review : {{tot_rev_amz}}</td></tr>     
+              
+          </table>
+          <table style ="float: left"class="table table-striped table-responsive table-hover table-bordered">
+               <tr>
+                    <th>  Results of SNAPDEAL</th>
+               </tr>
+                <tr><td>positive review predicted : {{pos_rev_snap}}</td></tr> 
+                <tr><td>negative review predicted : {{neg_rev_snap}}</td></tr>
+                <tr><td>total review : {{tot_rev_snap}}</td></tr>     
+              
+          </table>
+               
+      </div>
+
+      
+
+
+</body>
+</html>
